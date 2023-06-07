@@ -9,7 +9,17 @@
 </head>
 
 <body>
+    <nav>
+        <a href="/">Home</a>
+            
+        <a href="/titanic">Titanic</a>
+            
+        <a href="https://github.com/yagmurkocak">About</a>
+    </nav>
     <main>
+        <p> <a href="https://www.hwr-berlin.de/">HWR Berlin Homepage</a></p>
+    
+        <img src="{{ url_for('static', filename='image.jpeg') }}" alt="myimage"  style="width: 222px; height: 300px;">
         <h1>I have been seen {{ count }} times.</h1>
         <ul>
             {% for i in range(1, count+1) %}
@@ -17,6 +27,7 @@
             {% endfor %}
         </ul>
     </main>
+    <footer> created by Yagmur Kocak</footer>
 </body>
 
 </html>
